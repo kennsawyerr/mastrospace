@@ -1,0 +1,27 @@
+/* Shared styles for the four Mastrospace blog posts.
+   If your site has a global stylesheet, link it before this file and
+   delete the font-family line below so the posts inherit your font. */
+
+.mstr-post-page{margin:0;background:#000;color:rgba(255,255,255,.86);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+.mstr-post-page *{box-sizing:border-box}
+
+.mstr-post{max-width:680px;margin:0 auto;padding:40px 20px 96px}
+.mstr-post__back{display:inline-block;margin-bottom:48px;font-size:.9rem;color:#c8f04a;text-decoration:none}
+.mstr-post__back:hover{text-decoration:underline}
+
+.mstr-post__tag{display:inline-block;font-size:.75rem;line-height:1;padding:6px 10px;border-radius:999px;color:#c8f04a;border:1px solid #c8f04a;margin-bottom:20px}
+.mstr-post__title{margin:0 0 18px;font-size:clamp(1.9rem,5vw,2.75rem);line-height:1.15;font-weight:600;letter-spacing:-.01em;color:#fff;text-wrap:balance}
+.mstr-post__meta{margin:0 0 40px;font-size:.9rem;color:rgba(255,255,255,.55)}
+
+.mstr-post__body p{margin:0 0 1.25em;font-size:1.0625rem}
+.mstr-post__body h2{margin:2.2em 0 .6em;font-size:1.4rem;line-height:1.3;font-weight:600;color:#fff}
+.mstr-post__body ul,.mstr-post__body ol{margin:0 0 1.4em;padding-left:1.2em}
+.mstr-post__body li{margin-bottom:.55em;font-size:1.0625rem}
+.mstr-post__body li::marker{color:#c8f04a}
+.mstr-post__body strong{color:#fff;font-weight:600}
+
+.mstr-post__cta{margin-top:56px;padding:28px;border:1px solid rgba(200,240,74,.45);border-radius:6px}
+.mstr-post__cta p{margin:0 0 18px;font-size:1.0625rem;color:#fff}
+.mstr-post__cta a{display:inline-block;padding:13px 20px;border-radius:4px;background:#c8f04a;color:#000;font-weight:600;text-decoration:none}
+.mstr-post__cta a:hover{background:#d6f77a}
+.mstr-post a:focus-visible{outline:2px solid #c8f04a;outline-offset:3px}

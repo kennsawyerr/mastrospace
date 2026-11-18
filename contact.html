@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us — Mastrospace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6X5NNSM4YW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-6X5NNSM4YW");
+    </script>
+    <style>
+     
+
+      .kon-page {
+        --kon-bg: #000000;
+        --kon-bg-raised: #0d0d0d;
+        --kon-bg-field: #111111;
+        --kon-line: #2a2a2a;
+        --kon-line-soft: #1c1c1c;
+        --kon-text: #f5f5f3;
+        --kon-text-muted: #9a9a96;
+        --kon-text-faint: #6b6b67;
+        --kon-accent: #c8f04a;
+        --kon-accent-dim: #8fa934;
+        --kon-radius: 2px;
+
+        background: var(--kon-bg);
+        color: var(--kon-text);
+        font-family: "Inter", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .kon-page,
+      .kon-page * {
+        box-sizing: border-box;
+      }
+
+      .kon-page h1,
+      .kon-page h2,
+      .kon-page h3,
+      .kon-wordmark {
+        font-family: "Space Grotesk", sans-serif;
+      }
+
+      .kon-page a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .kon-page img,
+      .kon-page svg {
+        max-width: 100%;
+      }
+
+      .kon-page ::selection {
+        background: var(--kon-accent);
+        color: #000;
+      }
+
+      .kon-wordmark {
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      /* ---------- Hero ---------- */
+      .kon-hero {
+        background: var(--kon-bg-raised);
+        border-bottom: 1px solid var(--kon-line-soft);
+        padding: 72px 32px 56px;
+        text-align: center;
+      }
+      .kon-hero h1 {
+        font-size: clamp(2.2rem, 5vw, 3.4rem);
+        font-weight: 700;
+        margin: 0 0 18px;
+        letter-spacing: -0.015em;
+      }
+      .kon-breadcrumb {
+        font-size: 0.9rem;
+        color: var(--kon-text-faint);
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+      }
+      .kon-breadcrumb a {
+        color: var(--kon-text-muted);
+      }
+      .kon-breadcrumb a:hover {
+        color: var(--kon-text);
+      }
+      .kon-breadcrumb .kon-current {
+        color: var(--kon-accent);
+      }
+
+      /* ---------- Get in touch ---------- */
+      .kon-contact-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 72px 32px 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 56px;
+      }
+
+      .kon-contact-info h2 {
+        font-size: 1.9rem;
+        font-weight: 600;
+        margin: 0 0 32px;
+        letter-spacing: -0.01em;
+      }
+
+      .kon-info-block {
+        margin-bottom: 28px;
+      }
+      .kon-info-block .kon-label {
+        font-size: 0.78rem;
+        color: var(--kon-text-faint);
+        margin-bottom: 6px;
+      }
+      .kon-info-block .kon-value {
+        font-size: 1.02rem;
+        color: var(--kon-text);
+        margin: 0;
+      }
+      .kon-info-block a.kon-value:hover {
+        color: var(--kon-accent);
+      }
+      .kon-info-block .kon-value.kon-address {
+        color: var(--kon-text-muted);
+        line-height: 1.55;
+      }
+
+      /* ---------- Form ---------- */
+      .kon-form {
+        width: 100%;
+      }
+
+      .kon-form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .kon-form-row-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .kon-field label {
+        display: block;
+        font-size: 0.82rem;
+        color: var(--kon-text-muted);
+        margin-bottom: 8px;
+      }
+      .kon-field label .kon-optional {
+        color: var(--kon-text-faint);
+        font-weight: 400;
+      }
+
+      .kon-field input[type="text"],
+      .kon-field input[type="email"],
+      .kon-field input[type="tel"],
+      .kon-field select,
+      .kon-field textarea {
+        width: 100%;
+        background: var(--kon-bg-field);
+        border: 1px solid var(--kon-line);
+        color: var(--kon-text);
+        font-family: inherit;
+        font-size: 0.95rem;
+        padding: 13px 14px;
+        border-radius: var(--kon-radius);
+        outline: none;
+        transition:
+          border-color 0.15s ease,
+          box-shadow 0.15s ease;
+        appearance: none;
+      }
+      .kon-field input::placeholder,
+      .kon-field textarea::placeholder {
+        color: var(--kon-text-faint);
+      }
+
+      .kon-field input:focus-visible,
+      .kon-field select:focus-visible,
+      .kon-field textarea:focus-visible {
+        border-color: var(--kon-accent);
+        box-shadow: 0 0 0 3px rgba(200, 240, 74, 0.15);
+      }
+
+      .kon-field select {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%239a9a96' stroke-width='1.5' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        padding-right: 36px;
+      }
+      .kon-field select option {
+        background: var(--kon-bg-field);
+        color: var(--kon-text);
+      }
+
+      .kon-phone-field {
+        display: flex;
+        align-items: stretch;
+        background: var(--kon-bg-field);
+        border: 1px solid var(--kon-line);
+        border-radius: var(--kon-radius);
+        overflow: hidden;
+      }
+      .kon-phone-field:focus-within {
+        border-color: var(--kon-accent);
+        box-shadow: 0 0 0 3px rgba(200, 240, 74, 0.15);
+      }
+      .kon-phone-flag {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 0 12px;
+        color: var(--kon-text-muted);
+        font-size: 0.85rem;
+        border-right: 1px solid var(--kon-line);
+        white-space: nowrap;
+      }
+      .kon-phone-field input {
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      .kon-field textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+
+      .kon-consent {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 6px;
+        font-size: 0.85rem;
+        color: var(--kon-text-muted);
+      }
+      .kon-consent input {
+        margin-top: 3px;
+        accent-color: var(--kon-accent);
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+      }
+
+      .kon-submit-row {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 8px;
+      }
+      .kon-page button.kon-submit {
+        background: var(--kon-accent);
+        color: #000;
+        border: none;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 14px 36px;
+        border-radius: var(--kon-radius);
+        cursor: pointer;
+        transition:
+          background 0.15s ease,
+          transform 0.1s ease;
+      }
+      .kon-page button.kon-submit:hover {
+        background: #d8ff6b;
+      }
+      .kon-page button.kon-submit:active {
+        transform: translateY(1px);
+      }
+      .kon-page button.kon-submit:focus-visible {
+        outline: 2px solid var(--kon-accent);
+        outline-offset: 3px;
+      }
+
+      /* ---------- Map ---------- */
+      .kon-map-wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 32px 80px;
+      }
+      .kon-map {
+        width: 100%;
+        height: 340px;
+        border-radius: var(--kon-radius);
+        border: 1px solid var(--kon-line-soft);
+        filter: invert(1) hue-rotate(180deg) brightness(0.95) contrast(1.05);
+      }
+      /* Leaflet's own class names can't be renamed, so they are scoped
+         under .kon-map-wrap instead */
+      .kon-map-wrap .leaflet-marker-icon,
+      .kon-map-wrap .leaflet-popup,
+      .kon-map-wrap .leaflet-control {
+        filter: invert(1) hue-rotate(180deg);
+      }
+      .kon-map-wrap .leaflet-control-attribution {
+        background: rgba(0, 0, 0, 0.6) !important;
+        color: var(--kon-text-faint) !important;
+      }
+      .kon-map-wrap .leaflet-control-attribution a {
+        color: var(--kon-text-muted) !important;
+      }
+
+      /* ---------- Footer ---------- */
+      .kon-footer {
+        background: #000;
+        border-top: 1px solid var(--kon-line-soft);
+        padding: 56px 32px 28px;
+      }
+      .kon-footer-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+      }
+      .kon-footer-brand {
+        max-width: 360px;
+      }
+      .kon-footer-brand .kon-wordmark {
+        font-size: 1.1rem;
+        margin-bottom: 14px;
+        display: block;
+      }
+      .kon-footer-brand p {
+        color: var(--kon-text-faint);
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin: 0;
+      }
+      .kon-footer-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .kon-footer-links a {
+        color: var(--kon-text-muted);
+        font-size: 0.9rem;
+        transition: color 0.15s ease;
+      }
+      .kon-footer-links a:hover {
+        color: var(--kon-accent);
+      }
+
+      .kon-footer-bottom {
+        max-width: 1200px;
+        margin: 40px auto 0;
+        padding-top: 22px;
+        border-top: 1px solid var(--kon-line-soft);
+        text-align: center;
+        color: var(--kon-text-faint);
+        font-size: 0.8rem;
+      }
+
+      /* ---------- Desktop ---------- */
+      @media (min-width: 900px) {
+        .kon-hero {
+          padding: 96px 56px 72px;
+        }
+        .kon-contact-section {
+          grid-template-columns: 0.85fr 1.15fr;
+          padding: 96px 56px 56px;
+          gap: 80px;
+        }
+        .kon-form-row-2 {
+          grid-template-columns: 1fr 1fr;
+        }
+        .kon-map-wrap {
+          padding: 0 56px 100px;
+        }
+        .kon-map {
+          height: 420px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .kon-page * {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+     <nav class="nav">
+      <div class="nav-logo">
+        <img src="images/logo-nobg.png" alt="Mastrospace Logo" />
+      </div>
+
+      <div class="overlay" id="overlay"></div>
+      <ul id="nav-links" class="nav-links ">
+        <li>
+          <button class="close-btn" id="closeBtn" aria-label="Close menu">
+            &times;
+          </button>
+        </li>
+
+        <li class="active"><a href="/">Home</a></li>
+        <!-- <li><a href="/">About</a></li> -->
+        <li><a href="/index.html#cleaning">Cleaning</a></li>
+        <li><a href="/index.html#landscaping">Landscaping</a></li>
+        <li>
+          <a href="/contact.html" class="nav-cta">Contact Us</a>
+        </li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        &#9776;
+      </button>
+    </nav>
+
+    <!--  -->
+
+    <div class="kon-page">
+      <section class="kon-hero">
+        <h1>Contact Us</h1>
+        <div class="kon-breadcrumb">
+          <a href="#">Home</a>
+          <span>›</span>
+          <span class="kon-current">Contact Us</span>
+        </div>
+      </section>
+
+      <section class="kon-contact-section">
+        <div class="kon-contact-info">
+          <h2>Get In Touch</h2>
+
+          <div class="kon-info-block">
+            <div class="kon-label">Email</div>
+            <a class="kon-value" href="mailto:serv@mastrospace.com"
+              >serv@mastrospace.com</a
+            >
+          </div>
+
+          <div class="kon-info-block">
+            <div class="kon-label">Phone 1</div>
+            <a class="kon-value" href="tel:+2347034459447">+234 703 445 9447</a>
+          </div>
+
+          <div class="kon-info-block">
+            <div class="kon-label">Phone 2</div>
+            <a class="kon-value" href="tel:+2348106641285">+234 810 664 1285</a>
+          </div>
+
+          <div class="kon-info-block">
+            <div class="kon-label">Location</div>
+            <p class="kon-value">Port Harcourt, Nigeria</p>
+          </div>
+        </div>
+
+        <form class="kon-form">
+          <div class="kon-form-grid">
+            <div class="kon-form-row-2">
+              <div class="kon-field">
+                <label for="kon-fullname">Full Name</label>
+                <input
+                  type="text"
+                  id="kon-fullname"
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div class="kon-field">
+                <label for="kon-company"
+                  >Company Name
+                  <span class="kon-optional">(optional)</span></label
+                >
+                <input
+                  type="text"
+                  id="kon-company"
+                  placeholder="Your company (optional)"
+                />
+              </div>
+            </div>
+
+            <div class="kon-form-row-2">
+              <div class="kon-field">
+                <label for="kon-phone">Phone Number</label>
+                <div class="kon-phone-field">
+                  <span class="kon-phone-flag">🇳🇬 ▾</span>
+                  <input
+                    type="tel"
+                    id="kon-phone"
+                    placeholder="Enter phone number"
+                  />
+                </div>
+              </div>
+              <div class="kon-field">
+                <label for="kon-email">Email Address</label>
+                <input
+                  type="email"
+                  id="kon-email"
+                  placeholder="you@example.com"
+                />
+              </div>
+            </div>
+
+            <div class="kon-field">
+              <label for="kon-inquiry">Inquiry</label>
+              <select id="kon-inquiry">
+                <option value="">Select an option</option>
+                <option>General Inquiry</option>
+                <option>Request a Quote</option>
+                <option>Partnership</option>
+                <option>Support</option>
+              </select>
+            </div>
+
+            <div class="kon-field">
+              <label for="kon-message">Message / Additional Request</label>
+              <textarea
+                id="kon-message"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+
+            <label class="kon-consent">
+              <input type="checkbox" />
+              <span
+                >I consent to being contacted via phone or email regarding my
+                request.</span
+              >
+            </label>
+
+            <div class="kon-submit-row">
+              <button type="submit" class="kon-submit">Submit</button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div class="kon-map-wrap">
+        <div id="kon-map" class="kon-map"></div>
+      </div>
+
+     
+    </div>
+      <!-- =========================================================
+     FOOTER MARKUP
+     ========================================================= -->
+    <footer class="ms-footer">
+      <div class="ms-footer-top">
+        <div class="ms-footer-brand">
+          <div class="ms-footer-logo">
+            <img
+              src="/images/logo-nobg.png"
+              alt="Mastrospace Logo"
+              class="ms-footer-logo"
+            />
+          </div>
+
+          <p class="ms-footer-tagline">
+          Tough floors. Spotless spaces. Crafted for life.
+          </p>
+        </div>
+        <ul class="ms-footer-links">
+          <li class="active"><a href="#">Contact Us</a></li>
+          <li><a href="#">Cleaning </a></li>
+          <li><a href="#">Landscaping </a></li>
+          <!-- <li><a href="#">Pricing</a></li> -->
+          <!-- <li><a href="#">Pricing</a></li> -->
+        </ul>
+      </div>
+      <hr class="ms-footer-divider" />
+      <p class="ms-footer-bottom">© 2026 Mastrospace. All rights reserved.</p>
+    </footer>
+
+    <script>
+    var konMap = L.map("kon-map", { scrollWheelZoom: false }).setView(
+  [4.8156, 7.0498],
+  12,
+);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(konMap);
+     L.marker([4.8156, 7.0498]).addTo(konMap);
+    </script>
+  </body>
+</html>

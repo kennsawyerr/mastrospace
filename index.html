@@ -1,84 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mastrospace — Painting,Industrial Cleaning, Furniture & Landscaping</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-  
+<!doctype html>
 
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6X5NNSM4YW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6X5NNSM4YW');
-</script>
-<body>
-<!-- https://gleeful-mousse-395a9f.netlify.app/  - advice generator
-https://fascinating-entremet-3c482b.netlify.app/ - chart 
-https://rad-sherbet-240fe4.netlify.app/  - newsletter signup
-https://lovelaces.netlify.app/ - sneakers site
-https://tubular-strudel-59cad3.netlify.app/ - easybank website
-https://sterlingflights.netlify.app/- flight booking website -->
-
-
-
-
-  <nav class="nav">
-    <div class="nav-logo">MASTRO<span>SPACE</span></div>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a href="#contact" class="nav-cta">Get a Quote</a>
-  </nav>
-
-  <header class="hero">
-    <div class="hero-bg">
-      <div class="hero-grid"></div>
-    </div>
-    <div class="hero-content">
-     
-      <h1 class="hero-title">Heavy-Duty Stamped Concrete and Increte Flooring Solutions.</h1>
-      <p class="hero-sub">Say goodbye to cracked interlocking tiles and weed-infested driveways. Mastrospace engineers ultra-durable, high-gloss stamped concrete floors custom-built for Port Harcourt’s climate and heavy vehicle traffic.
-    </p>
-      <div class="hero-actions">
-        <a href="#services" class="btn-primary">Explore Services</a>
-        <a href="#contact" class="btn-ghost">Talk to Us →</a>
+ <nav class="nav">
+      <div class="nav-logo">
+        <img src="images/logo-nobg.png" alt="Mastrospace Logo" />
       </div>
-    </div>
-    <div class="hero-badge">
-      <span>EST.</span>
-      <strong>2016</strong>
-    </div>
-  </header>
+
+      <div class="overlay" id="overlay"></div>
+      <ul id="nav-links" class="nav-links ">
+        <li>
+          <button class="close-btn" id="closeBtn" aria-label="Close menu">
+            &times;
+          </button>
+        </li>
+
+        <li class="active"><a href="/">Home</a></li>
+        <!-- <li><a href="/">About</a></li> -->
+        <li><a href="/index.html#cleaning">Cleaning</a></li>
+        <li><a href="/index.html#landscaping">Landscaping</a></li>
+        <li>
+          <a href="/contact.html" class="nav-cta">Contact Us</a>
+        </li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        &#9776;
+      </button>
+    </nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastrospace — Industrial Cleaning & Landscaping</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-6X5NNSM4YW"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-6X5NNSM4YW");
+  </script>
+  </head>
   
+  <body>
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="images/logo-nobg.png" alt="Mastrospace Logo" />
+      </div>
 
-  <!-- gallery -->
-  <!-- gallery -->
-   <section class="gallery">
-      <h1 class="hero-title">Gallery</h1>
-    <div class="gallery-grid">
-      <div class="gallery-item"><img src="images/increte-before.png" alt="Gallery Image 1" /></div>
-      <div class="gallery-item"><img src="images/increte-after.png" alt="Gallery Image 2" /></div>
-      <div class="gallery-item"><img src="images/increte-two-before.png" alt="Gallery Image 3" /></div>
-      <div class="gallery-item"><img src="images/increte-two-after.png" alt="Gallery Image 4" /></div>
-      <div class="gallery-item"><img src="images/IMG_6997.PNG" alt="Gallery Image 5" /></div>
-      <div class="gallery-item"><img src="images/two.jpeg" alt="Gallery Image 6" /></div>
-    </div>
+      <div class="overlay" id="overlay"></div>
+      <ul id="nav-links" class="nav-links ">
+        <li>
+          <button class="close-btn" id="closeBtn" aria-label="Close menu">
+            &times;
+          </button>
+        </li>
+
+        <li class="active"><a href="/">Home</a></li>
+        <!-- <li><a href="#ab">About</a></li> -->
+        <li><a href="#cleaning">Cleaning</a></li>
+        <li><a href="#landscaping">Landscaping</a></li>
+        <li>
+          <a href="/contact.html" class="nav-cta">Contact Us</a>
+        </li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        &#9776;
+      </button>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+         Complete Property Care: Expert Cleaning & Landscaping in Port Harcourt.
+        </h1>
+        <p class="hero-sub">
+        Whether you need routine residential housekeeping, industrial facility cleaning, or full compound landscaping and lawn maintenance, Mastrospace keeps every square meter of your property in peak condition.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary">Explore Services</a>
+          <a href="/contact.html" class="btn-ghost">Talk to Us →</a>
+        </div>
+      </div>
+      <div class="hero-badge">
+        <span>EST.</span>
+        <strong>2016</strong>
+      </div>
+    </header>
+
+    <!--  -->
+    <!--  -->
+    <!-- services  -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">What We Do</span>
+          <h2>Two Pillars of<br />Exceptional Service</h2>
+        </div>
+        <div class="services-grid">
+          <!-- service 1 -->
+          <div class="service-card visible" id="cleaning" data-num="01">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 52L24 16L32 26L42 10L52 44"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle cx="32" cy="26" r="4" fill="currentColor" />
+                <path
+                  d="M8 56h48"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Industrial Cleaning</h3>
+            <p>
+              Formulated with water-repellent sealants engineered to withstand
+              Port Harcourt's intense rain without peeling, fading, or eroding.
+            </p>
+            <ul>
+              <li>Pressure washing & steam cleaning</li>
+              <li>Post-construction cleanup</li>
+              <li>Hourly residential cleaning</li>
+              <li>Scheduled maintenance programs</li>
+            </ul>
+            <a href="#contact" class="card-link">Request a Service →</a>
+          </div>
+
+          <!-- landscaping -->
+          <div class="service-card visible" data-num="02" id="landscaping">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 64 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M32 52V28"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M32 28C32 28 20 22 16 12c8 2 16 8 16 16z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="currentColor"
+                  fill-opacity="0.15"
+                />
+                <path
+                  d="M32 36C32 36 44 30 48 20c-8 2-16 8-16 16z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  fill="currentColor"
+                  fill-opacity="0.15"
+                />
+                <path
+                  d="M12 52h40"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Landscaping</h3>
+            <p>
+              Transform outdoor spaces with expert design, planting, and ongoing
+              maintenance. We create green environments that enhance your
+              property's beauty and value.
+            </p>
+            <ul>
+              <li>Garden design & installation</li>
+              <li>Lawn care & maintenance</li>
+              <li>Interlock and Increte Designs</li>
+              <li>Irrigation systems</li>
+            </ul>
+            <a href="#contact" class="card-link">Request a Service →</a>
+          </div>
+        </div>
+      </div>
     </section>
-  <!-- gallery -->
-  <!-- gallery -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
 
-  <section class="ticker">
+    <!-- <section class="ticker">
     <div class="ticker-inner">
       <span>Cleaning Services</span>
       <span class="dot">◆</span>
@@ -105,237 +234,751 @@ https://sterlingflights.netlify.app/- flight booking website -->
       <span>Painting</span>
       <span class="dot">◆</span>
     </div>
-  </section>
+  </section> -->
 
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="label">What We Do</span>
-        <h2>Four Pillars of<br />Exceptional Service</h2>
-      </div>
-      <div class="services-grid">
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- blogs section  -->
+    <!-- blogs section  -->
+    <!-- blogs section  -->
+    <!-- blogs section starts  -->
 
-        <div class="service-card" data-num="01">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 52L24 16L32 26L42 10L52 44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="32" cy="26" r="4" fill="currentColor"/>
-              <path d="M8 56h48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Cleaning Services</h3>
-          <p>Heavy-duty cleaning solutions for factories, warehouses, commercial kitchens, and large facilities. We remove grease, grime, and industrial residue to the highest standards.</p>
-          <ul>
-            <li>Pressure washing & steam cleaning</li>
-            <li>Post-construction cleanup</li>
-            <li>Hourly residential cleaning</li>
-            <li>Scheduled maintenance programs</li>
+    <section class="mstr-bx" aria-labelledby="mstr-bx-label">
+      <div class="mstr-bx__wrap">
+        <header class="mstr-bx__head">
+          <p class="mstr-bx__eyebrow" id="mstr-bx-label">From the field</p>
+          <p class="mstr-bx__lede">
+            Practical guides on keeping property clean, green and well built in
+            Port Harcourt.
+          </p>
+        </header>
+
+        <div class="mstr-bx__stage">
+          <ul class="mstr-bx__track" data-mstr-bx-track>
+            <li class="mstr-bx__slide">
+              <a
+                class="mstr-bx__card"
+                href="blog/keep-estate-compound-clean-and-green.html"
+              >
+                <span
+                  class="mstr-bx__img"
+                  style="
+                    background-image: url(&quot;/images/mstr-bg-three.jpg&quot;);
+                  "
+                  role="img"
+                  aria-label=""
+                ></span>
+                <span class="mstr-bx__shade"></span>
+                <span class="mstr-bx__copy">
+                  <span class="mstr-bx__title"
+                    >How to Keep an Estate Compound Clean and Green
+                    Year-Round</span
+                  >
+                  <span class="mstr-bx__tag">Cleaning</span>
+                </span>
+                <span class="mstr-bx__go" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <li class="mstr-bx__slide">
+              <a
+                class="mstr-bx__card"
+                href="blog/what-to-check-before-hiring-a-landscaper.html"
+              >
+                <span
+                  class="mstr-bx__img"
+                  style="
+                    background-image: url(&quot;/images/mstr-bg-two.jpg&quot;);
+                  "
+                  role="img"
+                  aria-label=""
+                ></span>
+                <span class="mstr-bx__shade"></span>
+                <span class="mstr-bx__copy">
+                  <span class="mstr-bx__title"
+                    >What to Check Before Hiring a Landscaper in Port
+                    Harcourt</span
+                  >
+                  <span class="mstr-bx__tag">Landscaping</span>
+                </span>
+                <span class="mstr-bx__go" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <li class="mstr-bx__slide">
+              <a
+                class="mstr-bx__card"
+                href="blog/post-construction-cleaning-cost-port-harcourt.html"
+              >
+                <span
+                  class="mstr-bx__img"
+                  style="
+                    background-image: url(&quot;/images/mstr-bg-five.jpg&quot;);
+                  "
+                  role="img"
+                  aria-label=""
+                ></span>
+                <span class="mstr-bx__shade"></span>
+                <span class="mstr-bx__copy">
+                  <span class="mstr-bx__title"
+                    >How Much Does Post-Construction Cleaning Cost in Port
+                    Harcourt?</span
+                  >
+                  <span class="mstr-bx__tag">Cleaning</span>
+                </span>
+                <span class="mstr-bx__go" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </span>
+              </a>
+            </li>
+
+            <li class="mstr-bx__slide">
+              <a
+                class="mstr-bx__card"
+                href="blog/stamped-concrete-vs-interlock.html"
+              >
+                <span
+                  class="mstr-bx__img"
+                  style="
+                    background-image: url(&quot;/images/site-one/IMG_1380.png&quot;);
+                  "
+                  role="img"
+                  aria-label=""
+                ></span>
+                <span class="mstr-bx__shade"></span>
+                <span class="mstr-bx__copy">
+                  <span class="mstr-bx__title"
+                    >Stamped Concrete vs Interlock: Which Lasts Longer for a
+                    Driveway?</span
+                  >
+                  <span class="mstr-bx__tag">Landscaping</span>
+                </span>
+                <span class="mstr-bx__go" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="18"
+                    height="18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M7 17 17 7M8 7h9v9" />
+                  </svg>
+                </span>
+              </a>
+            </li>
           </ul>
-          <a href="#contact" class="card-link">Request a Service →</a>
-        </div>
 
-        <div class="service-card featured" data-num="02">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="32" width="44" height="20" rx="2" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M18 32V20a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v12" stroke="currentColor" stroke-width="2.5"/>
-              <path d="M10 44h44" stroke="currentColor" stroke-width="2"/>
-              <circle cx="22" cy="52" r="3" fill="currentColor"/>
-              <circle cx="42" cy="52" r="3" fill="currentColor"/>
+          <!-- Mobile only -->
+          <div class="mstr-bx__nav" data-mstr-bx-nav>
+            <button
+              type="button"
+              class="mstr-bx__btn"
+              data-mstr-bx-prev
+              aria-label="Previous article"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 6l-6 6 6 6" />
+              </svg>
+            </button>
+            <span class="mstr-bx__count" aria-live="polite"
+              ><span data-mstr-bx-now>1</span> / 4</span
+            >
+            <button
+              type="button"
+              class="mstr-bx__btn"
+              data-mstr-bx-next
+              aria-label="Next article"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs section  -->
+    <!-- blogs section  -->
+    <!-- blogs section ends -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- project section starts -->
+    <!-- project section starts -->
+
+    <section class="ms-projects-section">
+      <div class="ms-projects-header">
+        <div class="ms-projects-heading-group">
+          <h2 class="ms-projects-title">Featured Projects in Port Harcourt</h2>
+          <p class="ms-projects-subtitle">
+            Interactive proof of work. Drag the slider to compare Before vs
+            After.
+          </p>
+        </div>
+        <!-- <button type="button" class="ms-projects-view-all">
+          VIEW ALL PROJECTS (6)
+          <svg
+            class="ms-projects-view-all-arrow"
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 7H13M13 7L7.5 1.5M13 7L7.5 12.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button> -->
+      </div>
+
+      <div class="ms-projects-grid">
+        <!-- Card 1 -->
+        <article class="ms-projects-card">
+          <div class="ms-projects-media" data-ms-projects-slider>
+          
+            <div class="ms-projects-media-layer ms-projects-media-after">
+           
+             <img src="/images/site-one/increte-after.png" draggable="false" />
+             
+            </div>
+            <div class="ms-projects-media-layer ms-projects-media-before">
+             <img src="/images/site-one/increte-before.png"/>
+             
+             
+            </div>
+            <div class="ms-projects-slider-line"></div>
+            <!-- after -->
+            <div class="ms-projects-slider-handle">
+              <svg
+                class="ms-projects-slider-handle-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 7L3 12L8 17M16 7L21 12L16 17"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="ms-projects-card-body">
+            <span class="ms-projects-tag"> 
+              LANDSCAPING </span>
+            <h3 class="ms-projects-card-title">
+           
+              
+              Heavy-Duty Stamped Concrete Commercial Driveway
+            </h3>
+            <p class="ms-projects-card-meta">
+              GRA Phase 3, Port Harcourt • 3 Days
+            </p>
+            <!-- <button type="button" class="ms-projects-play-btn">
+              <svg
+                class="ms-projects-play-icon"
+                viewBox="0 0 12 14"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0L12 7L0 14V0Z" />
+              </svg>
+              Play Site Footage Video
+            </button> -->
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="ms-projects-card">
+          <div class="ms-projects-media">
+          
+          
+            <div class="ms-projects-media-layer ">
+             <img src="/images/site-four/cleaning-before.png" draggable="false" />
+          
+              
+            </div>
+           
+           
+          </div>
+          <div class="ms-projects-card-body">
+            <span class="ms-projects-tag"> CLEANING</span>
+            <h3 class="ms-projects-card-title">
+                1-Unit Luxury Estate Post-Construction Cleanup
+            </h3>
+            <p class="ms-projects-card-meta">
+              Peter Odili Road, Trans Amadi, PH  • 6 Days
+            </p>
+           <a
+  href="https://www.instagram.com/reel/DfT_P6Puwm5/"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="ms-projects-play-btn"
+>
+  <svg
+    class="ms-projects-play-icon"
+    viewBox="0 0 12 14"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M0 0L12 7L0 14V0Z" />
+  </svg>
+  Play Site Footage Video
+</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="ms-projects-card">
+          <div class="ms-projects-media" data-ms-projects-slider>
+           
+            <div class="ms-projects-media-layer ms-projects-media-after">
+              
+           
+             <img src="/images/washing-after.png" draggable="false"/>
+            </div>
+            <div class="ms-projects-media-layer ms-projects-media-before">
+             
+              <img src="/images/site-three/IMG_7014.png" draggable="false"/>
+             
+            </div>
+            <div class="ms-projects-slider-line"></div>
+            <div class="ms-projects-slider-handle">
+              <svg
+                class="ms-projects-slider-handle-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 7L3 12L8 17M16 7L21 12L16 17"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="ms-projects-card-body">
+            <span class="ms-projects-tag">CLEANING</span>
+            <h3 class="ms-projects-card-title">
+              Industrial Warehouse Floor &amp; Grease Removal
+            </h3>
+            <p class="ms-projects-card-meta">
+              Trans Amadi Industrial Layout, Port Harcourt • 3 Days
+            </p>
+         
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- project section ends -->
+    <!-- project section ends -->
+
+    <!-- faq section starts -->
+    <!-- faq section starts -->
+    <!-- faq section starts -->
+    <!-- faq section starts -->
+    <!-- faq section starts -->
+
+    <section class="ms-faq-section">
+      <h2 class="ms-faq-title">Frequently Asked Questions</h2>
+
+      <div class="ms-faq-list" data-ms-faq-list>
+        <div class="ms-faq-item">
+          <button type="button" class="ms-faq-question" data-ms-faq-trigger>
+            What makes Mastrospace different?
+            <svg
+              class="ms-faq-icon"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 3V17M3 10H17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
+          </button>
+          <div class="ms-faq-answer-wrap">
+            <div class="ms-faq-answer-inner">
+              <p class="ms-faq-answer">
+              Mastrospace stands out by integrating industrial cleaning, custom furniture, landscaping, and precision painting, while using heavy-duty stamped concrete and Increte flooring engineered to withstand Port Harcourt's climate and traffic.
+              </p>
+            </div>
           </div>
-          <h3>Furniture Works</h3>
-          <p>Custom fabrication, restoration, and installation of furniture for offices, hotels, and residential spaces. From concept to completion, we craft pieces that last.</p>
-          <ul>
-            <li>Custom design & fabrication</li>
-            <li>Restoration & upholstery</li>
-            <li>Commercial fit-outs</li>
-            <li>Installation & assembly</li>
-          </ul>
-          <a href="#contact" class="card-link">Request a Service →</a>
         </div>
 
-        <div class="service-card" data-num="03">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 52V28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M32 28C32 28 20 22 16 12c8 2 16 8 16 16z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.15"/>
-              <path d="M32 36C32 36 44 30 48 20c-8 2-16 8-16 16z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.15"/>
-              <path d="M12 52h40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <div class="ms-faq-item">
+          <button type="button" class="ms-faq-question" data-ms-faq-trigger>
+            Does Mastrospace offer services?
+            <svg
+              class="ms-faq-icon"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 3V17M3 10H17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
+          </button>
+          <div class="ms-faq-answer-wrap">
+            <div class="ms-faq-answer-inner">
+              <p class="ms-faq-answer">
+             Mastrospace provides professional services—specifically industrial cleaning, custom furniture, landscaping, precision painting, and heavy-duty stamped concrete and Increte flooring.
+              </p>
+            </div>
           </div>
-          <h3>Landscaping</h3>
-          <p>Transform outdoor spaces with expert design, planting, and ongoing maintenance. We create green environments that enhance your property's beauty and value.</p>
-          <ul>
-            <li>Garden design & installation</li>
-            <li>Lawn care & maintenance</li>
-            <li>Interlock and Increte Designs</li>
-            <li>Irrigation systems</li>
-          </ul>
-          <a href="#contact" class="card-link">Request a Service →</a>
         </div>
 
-         <div class="service-card featured" data-num="04">
-          <div class="service-icon">
-            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 52V28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M32 28C32 28 20 22 16 12c8 2 16 8 16 16z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.15"/>
-              <path d="M32 36C32 36 44 30 48 20c-8 2-16 8-16 16z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.15"/>
-              <path d="M12 52h40" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <div class="ms-faq-item">
+          <button type="button" class="ms-faq-question" data-ms-faq-trigger>
+            How does Mastrospace ensure safety in its services?
+            <svg
+              class="ms-faq-icon"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 3V17M3 10H17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
-          </div>
-          <h3>Painting</h3>
-          <p>Professional interior and exterior painting services to transform your space with vibrant colors and lasting finishes.</p>
-          <ul>
-            <li>Interior painting</li>
-            <li>Exterior painting</li>
-            <li>Trim & detail work</li>
-            <li>Color consultation</li>
-          </ul>
-          <a href="#contact" class="card-link">Request a Service →</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="container about-inner">
-      <div class="about-visual">
-        <div class="about-block a1">
-           <img src="images/two.jpeg"/>
-        </div>
-        <div class="about-block a2">
-
-          <img src="images/IMG_6997.PNG"/>
-        </div>
-        <div class="about-stat">
-          <strong>500+</strong>
-          <span>Projects<br />Completed</span>
-        </div>
-        <div class="about-stat s2">
-          <strong>10+</strong>
-          <span>Years of<br />Experience</span>
-        </div>
-      </div>
-      <div class="about-text">
-        <span class="label">About Us</span>
-        <h2>Built on Precision.<br />Driven by Pride.</h2>
-        <p>Mastrospace was founded with a single belief: every space deserves to be treated with care. Whether we're painting your space or deep-cleaning a home or an industrial facility, crafting a bespoke furniture piece, or reshaping an outdoor garden, we bring the same level of mastery to every job.</p>
-        <p>Our team of skilled professionals has served hundreds of clients across residential, commercial, and industrial sectors. We don't just complete tasks — we raise the standard.</p>
-        <div class="about-vals">
-          <div class="val"><span>✦</span> Reliability</div>
-          <div class="val"><span>✦</span> Attention to Detail</div>
-          <div class="val"><span>✦</span> Client-First Approach</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <span class="label">Get In Touch</span>
-          <h2>Let's Work<br />Together.</h2>
-          <p>Ready to transform your space? Reach out and we'll get back to you within 24 hours with a tailored quote.</p>
-          <div class="contact-details">
-            <div class="detail">
-              <div class="detail-icon">📍</div>
-              <div>
-                <strong>Location</strong>
-                <span>Rivers State, Nigeria</span>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail-icon">📞</div>
-              <div>
-                <strong>Phone</strong>
-                <span>+234 703 445 9447</span>
-                <span>|</span>
-                <span>+234 810 664 1285</span>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail-icon">✉️</div>
-              <div>
-                <strong>Email</strong>
-                <span>serv@mastrospace.com</span>
-              </div>
-            </div>
-            <div class="detail">
-              <div class="detail-icon">📞</div>
-              <div>
-                <strong>Social Media Handles</strong>
-                <span>@mastrospace</span>
-              </div>
+          </button>
+          <div class="ms-faq-answer-wrap">
+            <div class="ms-faq-answer-inner">
+              <p class="ms-faq-answer">
+               Mastrospace ensures safety across its multi-service operations by deploying trained personnel, utilizing specialized industrial-grade equipment, following strict protocols for chemical handling during industrial cleaning, and enforcing site-specific safety measures for heavy landscaping and stamped concrete installations.
+              </p>
             </div>
           </div>
         </div>
 
-
-        <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required />
-              </div>
+        <div class="ms-faq-item">
+          <button type="button" class="ms-faq-question" data-ms-faq-trigger>
+            Can I schedule a project in advance?
+            <svg
+              class="ms-faq-icon"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 3V17M3 10H17"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="ms-faq-answer-wrap">
+            <div class="ms-faq-answer-inner">
+              <p class="ms-faq-answer">
+              Yes, clients can schedule a project in advance with Mastrospace to secure their preferred timeline and ensure proper resource allocation for industrial cleaning, landscaping, or concrete installations.
+              </p>
             </div>
-            <div class="form-group">
-              <label for="service">Service Interested In</label>
-              <select id="service" name="service">
-                <option value="">Select a service</option>
-                <option value="cleaning">Cleaning Services</option>
-                <option value="furniture">Furniture Works</option>
-                <option value="landscaping">Landscaping</option>
-                <option value="painting">Painting</option>
-                <option value="multiple">Multiple Services</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Your Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Send Message <span>→</span></button>
-            <p class="form-note" id="formNote"></p>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-logo">MASTRO<span>SPACE</span></div>
-      <p>© 2026 Mastrospace. All rights reserved.</p>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+    <!-- =========================================================
+     CTA MARKUP
+     ========================================================= -->
+    <section class="ms-cta-section">
+      <div class="ms-cta-card">
+        <div class="ms-cta-decor" aria-hidden="true">
+          <div class="ms-cta-decor-pill ms-cta-decor-pill-1"></div>
+          <div class="ms-cta-decor-pill ms-cta-decor-pill-2"></div>
+          <div class="ms-cta-decor-pill ms-cta-decor-pill-3"></div>
+        </div>
+        <div class="ms-cta-content">
+          <h2 class="ms-cta-heading">Transform Your Space. <br/>
+             Contact Mastrospace.</h2>
+          <p class="ms-cta-copy">
+            Get expert house deep cleanup, professional Increte flooring for your property today.
+          </p>
+          <button type="button" class="ms-cta-btn">Contact Us</button>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const note = document.getElementById('formNote');
-      note.textContent = '✔ Message sent! We\'ll be in touch within 24 hours.';
-      note.style.color = '#a3e635';
-      this.reset();
-    });
+    <!-- =========================================================
+     FOOTER MARKUP
+     ========================================================= -->
+    <footer class="ms-footer">
+      <div class="ms-footer-top">
+        <div class="ms-footer-brand">
+          <div class="ms-footer-logo">
+            <img
+              src="/images/logo-nobg.png"
+              alt="Mastrospace Logo"
+              class="ms-footer-logo"
+            />
+          </div>
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-    }, { threshold: 0.1 });
+          <p class="ms-footer-tagline">
+          Tough floors. Spotless spaces. Crafted for life.
+          </p>
+        </div>
+        <ul class="ms-footer-links">
+          <li class="active"><a href="#">Contact Us</a></li>
+          <li><a href="#">Cleaning </a></li>
+          <li><a href="#">Landscaping </a></li>
+          <!-- <li><a href="#">Pricing</a></li> -->
+          <!-- <li><a href="#">Pricing</a></li> -->
+        </ul>
+      </div>
+      <hr class="ms-footer-divider" />
+      <p class="ms-footer-bottom">© 2026 Mastrospace. All rights reserved.</p>
+    </footer>
 
-    document.querySelectorAll('.service-card, .about-inner, .contact-wrapper').forEach(el => observer.observe(el));
-  </script>
 
-</body>
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const closeBtn = document.getElementById("closeBtn");
+      const sidebar = document.getElementById("nav-links");
+      const overlay = document.getElementById("overlay");
+
+      function openMenu() {
+        sidebar.classList.add("open");
+        overlay.classList.add("show");
+      }
+      function closeMenu() {
+        sidebar.classList.remove("open");
+        overlay.classList.remove("show");
+      }
+
+      menuBtn.addEventListener("click", openMenu);
+      closeBtn.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu); // click the dark area to close
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+
+      // faq toggle
+      (function () {
+        var list = document.querySelector("[data-ms-faq-list]");
+        if (!list) return;
+
+        var triggers = list.querySelectorAll("[data-ms-faq-trigger]");
+
+        triggers.forEach(function (trigger) {
+          trigger.addEventListener("click", function () {
+            var item = trigger.closest(".ms-faq-item");
+            var isOpen = item.classList.contains("ms-faq-item-open");
+
+            list
+              .querySelectorAll(".ms-faq-item-open")
+              .forEach(function (openItem) {
+                openItem.classList.remove("ms-faq-item-open");
+              });
+
+            if (!isOpen) {
+              item.classList.add("ms-faq-item-open");
+            }
+          });
+        });
+      })();
+
+      (function () {
+        function initSlider(mediaEl) {
+          var beforeLayer = mediaEl.querySelector(".ms-projects-media-before");
+          var line = mediaEl.querySelector(".ms-projects-slider-line");
+          var handle = mediaEl.querySelector(".ms-projects-slider-handle");
+          var dragging = false;
+
+          function setPosition(clientX) {
+            var rect = mediaEl.getBoundingClientRect();
+            var x = Math.min(Math.max(clientX - rect.left, 0), rect.width);
+            var percent = (x / rect.width) * 100;
+            beforeLayer.style.clipPath =
+              "inset(0 " + (100 - percent) + "% 0 0)";
+            line.style.left = percent + "%";
+            handle.style.left = percent + "%";
+          }
+
+          function onDown(e) {
+            dragging = true;
+            setPosition(e.touches ? e.touches[0].clientX : e.clientX);
+          }
+          function onMove(e) {
+            if (!dragging) return;
+            setPosition(e.touches ? e.touches[0].clientX : e.clientX);
+          }
+          function onUp() {
+            dragging = false;
+          }
+
+          mediaEl.addEventListener("mousedown", onDown);
+          mediaEl.addEventListener("touchstart", onDown, { passive: true });
+          window.addEventListener("mousemove", onMove);
+          window.addEventListener("touchmove", onMove, { passive: true });
+          window.addEventListener("mouseup", onUp);
+          window.addEventListener("touchend", onUp);
+        }
+
+        document
+          .querySelectorAll("[data-ms-projects-slider]")
+          .forEach(initSlider);
+      })();
+
+      const form = document.getElementById("contactForm");
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const note = document.getElementById("formNote");
+          note.textContent =
+            "✔ Message sent! We'll be in touch within 24 hours.";
+          note.style.color = "#a3e635";
+          this.reset();
+        });
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) e.target.classList.add("visible");
+          });
+        },
+        { threshold: 0.1 },
+      );
+
+      document
+        .querySelectorAll(".service-card, .about-inner, .contact-wrapper")
+        .forEach((el) => observer.observe(el));
+
+      (function () {
+        var root = document.querySelector(".mstr-bx");
+        if (!root || root.getAttribute("data-mstr-bx-ready")) return;
+        root.setAttribute("data-mstr-bx-ready", "1");
+
+        var track = root.querySelector("[data-mstr-bx-track]");
+        var prev = root.querySelector("[data-mstr-bx-prev]");
+        var next = root.querySelector("[data-mstr-bx-next]");
+        var now = root.querySelector("[data-mstr-bx-now]");
+        var slides = track.children;
+        var reduce = window.matchMedia(
+          "(prefers-reduced-motion: reduce)",
+        ).matches;
+
+        function index() {
+          var w =
+            slides[0].getBoundingClientRect().width +
+            parseFloat(getComputedStyle(track).columnGap || 0);
+          return Math.round(track.scrollLeft / w);
+        }
+        function go(i) {
+          i = Math.max(0, Math.min(slides.length - 1, i));
+          track.scrollTo({
+            left: slides[i].offsetLeft - track.offsetLeft,
+            behavior: reduce ? "auto" : "smooth",
+          });
+        }
+        function sync() {
+          var i = index();
+          now.textContent = i + 1;
+          prev.disabled = i <= 0;
+          next.disabled = i >= slides.length - 1;
+        }
+
+        prev.addEventListener("click", function () {
+          go(index() - 1);
+        });
+        next.addEventListener("click", function () {
+          go(index() + 1);
+        });
+        var t;
+        track.addEventListener(
+          "scroll",
+          function () {
+            clearTimeout(t);
+            t = setTimeout(sync, 60);
+          },
+          { passive: true },
+        );
+        window.addEventListener("resize", sync);
+        sync();
+      })();
+    </script>
+  </body>
 </html>
